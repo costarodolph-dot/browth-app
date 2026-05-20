@@ -98,12 +98,13 @@ const campanhas = [
 ]
 
 // ─── Tooltip customizado ──────────────────────────────────────────────────────
-function CustomTooltip({ active, payload, label }: any) {
+type TooltipPayloadItem = { name: string; value: number; color: string }
+function CustomTooltip({ active, payload, label }: { active?: boolean; payload?: TooltipPayloadItem[]; label?: string }) {
   if (!active || !payload?.length) return null
   return (
     <div className="bg-white border border-gray-200 rounded-xl px-3 py-2 shadow-soft text-xs font-arimo">
       <p className="text-text-tertiary mb-1">{label}</p>
-      {payload.map((p: any) => (
+      {payload.map((p: TooltipPayloadItem) => (
         <div key={p.name} className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full" style={{ background: p.color }} />
           <span className="text-text-secondary capitalize">{p.name}:</span>
