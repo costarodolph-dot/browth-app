@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@400;500;600&family=Archivo+Narrow:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FFF8F7;
+  color: #0A0A0A;
+  font-family: 'Arimo', sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.06) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#__next, main {
+  position: relative;
+  z-index: 1;
+}
+
+.font-anton { font-family: 'Anton', sans-serif; }
+.font-arimo { font-family: 'Arimo', sans-serif; }
+.font-archivo { font-family: 'Archivo Narrow', sans-serif; }
+
+.glass-card {
+  background: rgba(255, 248, 247, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.shadow-soft {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.active-glow {
+  border: 1px solid #E8181A;
+  box-shadow: 0 0 8px rgba(232, 24, 26, 0.25);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.12);
+  border-radius: 999px;
+}
