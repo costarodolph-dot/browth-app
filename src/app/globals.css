@@ -26,20 +26,9 @@ body::before {
   z-index: 0;
 }
 
-#__next, main {
-  position: relative;
-  z-index: 1;
-}
-
 .font-anton { font-family: 'Anton', sans-serif; }
 .font-arimo { font-family: 'Arimo', sans-serif; }
 .font-archivo { font-family: 'Archivo Narrow', sans-serif; }
-
-.glass-card {
-  background: rgba(255, 248, 247, 0.7);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-}
 
 .shadow-soft {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
