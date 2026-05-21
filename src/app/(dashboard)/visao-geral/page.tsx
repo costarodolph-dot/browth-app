@@ -160,10 +160,10 @@ export default function VisaoGeralPage() {
     { label: 'Compartilhamentos', value: '8.4K', delta: '+12%', color: '#6B6B6B' },
   ]
 
-  const cardCls = 'bg-white border border-[#F0F0F0] rounded-[10px] p-6 shadow-[0_2px_12px_rgba(0,0,0,0.04)]'
+  const cardCls = 'bg-white border border-[#E8E8E8] rounded-[10px] p-6 shadow-[0_1px_4px_rgba(0,0,0,0.06)]'
 
   return (
-    <div className="bg-white min-h-full">
+    <div className="min-h-full">
 
       {/* ── SEÇÃO 1 — Métricas ─────────────────────────────────────────── */}
       <div className="grid grid-cols-4 gap-4">
@@ -232,7 +232,7 @@ export default function VisaoGeralPage() {
       </div>
 
       {/* ── SEÇÃO 2 — Pipeline ─────────────────────────────────────────── */}
-      <div className="bg-white border border-[#F0F0F0] rounded-[10px] px-6 py-5 mt-5">
+      <div className="bg-white border border-[#E8E8E8] rounded-[10px] px-6 py-5 mt-5 shadow-[0_1px_4px_rgba(0,0,0,0.06)]">
         <div className="flex items-center justify-between">
           {pipelineStages.map((stage, i) => {
             const Icon = stage.icon
