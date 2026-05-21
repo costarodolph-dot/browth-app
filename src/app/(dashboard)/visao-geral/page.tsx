@@ -160,10 +160,10 @@ export default function VisaoGeralPage() {
     { label: 'Compartilhamentos', value: '8.4K', delta: '+12%', color: '#6B6B6B' },
   ]
 
-  const cardCls = 'bg-white/70 backdrop-blur-[12px] border border-black/[0.06] rounded-[10px] p-5 shadow-[0_2px_12px_rgba(0,0,0,0.04)]'
+  const cardCls = 'bg-white border border-[#F0F0F0] rounded-[10px] p-6 shadow-[0_2px_12px_rgba(0,0,0,0.04)]'
 
   return (
-    <div className="space-y-5 bg-white min-h-full p-1">
+    <div className="bg-white min-h-full">
 
       {/* ── SEÇÃO 1 — Métricas ─────────────────────────────────────────── */}
       <div className="grid grid-cols-4 gap-4">
@@ -232,7 +232,7 @@ export default function VisaoGeralPage() {
       </div>
 
       {/* ── SEÇÃO 2 — Pipeline ─────────────────────────────────────────── */}
-      <div className="bg-white border border-[#F0F0F0] rounded-[10px] px-6 py-4">
+      <div className="bg-white border border-[#F0F0F0] rounded-[10px] px-6 py-5 mt-5">
         <div className="flex items-center justify-between">
           {pipelineStages.map((stage, i) => {
             const Icon = stage.icon
@@ -257,7 +257,7 @@ export default function VisaoGeralPage() {
       </div>
 
       {/* ── SEÇÃO 3 — Analytics 2 colunas ─────────────────────────────── */}
-      <div className="grid grid-cols-5 gap-4">
+      <div className="grid grid-cols-5 gap-4 mt-5">
 
         {/* Coluna esquerda — Performance do conteúdo (60%) */}
         <div className={`${cardCls} col-span-3`}>
@@ -390,7 +390,7 @@ export default function VisaoGeralPage() {
       </div>
 
       {/* ── SEÇÃO 4 — Campanhas recentes ────────────────────────────── */}
-      <div className={cardCls}>
+      <div className={`${cardCls} mt-5`}>
         <div className="flex items-center justify-between mb-4">
           <h2 className="font-arimo text-[14px] font-semibold text-text-primary">Campanhas recentes</h2>
           <button className="flex items-center gap-1 font-arimo text-[12px] text-[#E8181A] hover:underline">
